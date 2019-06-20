@@ -1,0 +1,27 @@
+# Taken from https://jnavila.github.io/plotkicadsch/
+
+# A particular annoying feature is the fact that the project file contains a field 
+# that represents the date of last modification of the project, for example, when
+# a lib is added to the project. I don’t know where this date is supposed to appear,
+# but the changes in this field are quite disruptive for version control.
+
+# This is now set by the following commands:
+#   $ git config --local filter.kicad_project.clean "sed -E 's/^update=.*$/update=Date/'"
+#   $ git config --local filter.kicad_project.smudge cat
+
+*.pro filter=kicad_project
+
+# Another annoying behavior in Kicad Schematics is the way the power and flag parts
+# are numbered. These components are part of the schematic but they don’t appear 
+# in the BOM. So, their numbering is all managed internally by Kicad. Kicad renumbers
+# them all everytime the user requests an annotation of the project, which modifies 
+# all those references in all the sheets each time or when a DRC test is run. As a
+# user, I don’t care which numbers are assigned to these components and I don’t want
+# them to appear in the diff between commits. So it’s better keeping the references
+# for all theses phantom parts to “unknown” in the revision control system. 
+
+# This is now set by the following commands:
+#   $ git config --local filter.kicad_sch.clean "sed -E 's/#(PWR|FLG)[0-9]+/#\1?/'"
+#   $ git config --local filter.kicad_sch.smudge cat
+
+*.sch filter=kicad_sch
