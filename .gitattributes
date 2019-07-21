@@ -6,8 +6,8 @@
 # but the changes in this field are quite disruptive for version control.
 
 # This is now set by the following commands:
-#   $ git config --local filter.kicad_project.clean "sed -E 's/^update=.*$/update=Date/'"
-#   $ git config --local filter.kicad_project.smudge cat
+#   $ git config --gloal filter.kicad_project.clean "sed -E 's/^update=.*$/update=Date/'"
+#   $ git config --global filter.kicad_project.smudge cat
 
 *.pro filter=kicad_project
 
@@ -21,7 +21,7 @@
 # for all theses phantom parts to “unknown” in the revision control system. 
 
 # This is now set by the following commands:
-#   $ git config --local filter.kicad_sch.clean "sed -E 's/#(PWR|FLG)[0-9]+/#\1?/'"
-#   $ git config --local filter.kicad_sch.smudge cat
+#   $ git config --global filter.kicad_sch.clean "sed -E 's/#(PWR|FLG)[0-9]+/#\1?/'"
+#   $ git config --global filter.kicad_sch.smudge cat
 
 *.sch filter=kicad_sch
