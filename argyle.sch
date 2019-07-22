@@ -1,0 +1,848 @@
+EESchema Schematic File Version 4
+LIBS:argyle-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:D D10
+U 1 1 5D207AD3
+P 2950 1300
+F 0 "D10" H 2950 1516 50  0000 C CNN
+F 1 "D" H 2950 1425 50  0000 C CNN
+F 2 "" H 2950 1300 50  0001 C CNN
+F 3 "~" H 2950 1300 50  0001 C CNN
+	1    2950 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D20
+U 1 1 5D207F3C
+P 2950 1650
+F 0 "D20" H 2950 1866 50  0000 C CNN
+F 1 "D" H 2950 1775 50  0000 C CNN
+F 2 "" H 2950 1650 50  0001 C CNN
+F 3 "~" H 2950 1650 50  0001 C CNN
+	1    2950 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K10
+U 1 1 5D209011
+P 3400 1300
+F 0 "K10" H 3400 1533 60  0000 C CNN
+F 1 "KEYSW" H 3400 1200 60  0001 C CNN
+F 2 "" H 3400 1300 60  0000 C CNN
+F 3 "" H 3400 1300 60  0000 C CNN
+	1    3400 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K20
+U 1 1 5D20961A
+P 3400 1650
+F 0 "K20" H 3400 1883 60  0000 C CNN
+F 1 "KEYSW" H 3400 1550 60  0001 C CNN
+F 2 "" H 3400 1650 60  0000 C CNN
+F 3 "" H 3400 1650 60  0000 C CNN
+	1    3400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D00
+U 1 1 5D20AACB
+P 2950 950
+F 0 "D00" H 2950 1166 50  0000 C CNN
+F 1 "D" H 2950 1075 50  0000 C CNN
+F 2 "" H 2950 950 50  0001 C CNN
+F 3 "~" H 2950 950 50  0001 C CNN
+	1    2950 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K00
+U 1 1 5D20AAD5
+P 3400 950
+F 0 "K00" H 3400 1183 60  0000 C CNN
+F 1 "KEYSW" H 3400 850 60  0001 C CNN
+F 2 "" H 3400 950 60  0000 C CNN
+F 3 "" H 3400 950 60  0000 C CNN
+	1    3400 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K40
+U 1 1 5D209FC4
+P 3400 2350
+F 0 "K40" H 3400 2583 60  0000 C CNN
+F 1 "KEYSW" H 3400 2250 60  0001 C CNN
+F 2 "" H 3400 2350 60  0000 C CNN
+F 3 "" H 3400 2350 60  0000 C CNN
+	1    3400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K30
+U 1 1 5D209755
+P 3400 2000
+F 0 "K30" H 3400 2233 60  0000 C CNN
+F 1 "KEYSW" H 3400 1900 60  0001 C CNN
+F 2 "" H 3400 2000 60  0000 C CNN
+F 3 "" H 3400 2000 60  0000 C CNN
+	1    3400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D40
+U 1 1 5D208976
+P 2950 2350
+F 0 "D40" H 2950 2566 50  0000 C CNN
+F 1 "D" H 2950 2475 50  0000 C CNN
+F 2 "" H 2950 2350 50  0001 C CNN
+F 3 "~" H 2950 2350 50  0001 C CNN
+	1    2950 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D30
+U 1 1 5D20889B
+P 2950 2000
+F 0 "D30" H 2950 2216 50  0000 C CNN
+F 1 "D" H 2950 2125 50  0000 C CNN
+F 2 "" H 2950 2000 50  0001 C CNN
+F 3 "~" H 2950 2000 50  0001 C CNN
+	1    2950 2000
+	1    0    0    -1  
+$EndComp
+Text Label 2500 950  0    50   ~ 0
+row0
+Wire Wire Line
+	2500 950  2800 950 
+Text Label 2500 1300 0    50   ~ 0
+row1
+Text Label 2500 1650 0    50   ~ 0
+row2
+Text Label 2500 2000 0    50   ~ 0
+row3
+Text Label 2500 2350 0    50   ~ 0
+row4
+Text Label 3850 650  1    50   ~ 0
+col0
+Wire Wire Line
+	3850 650  3850 950 
+Wire Wire Line
+	3850 950  3700 950 
+Wire Wire Line
+	3850 950  3850 1300
+Wire Wire Line
+	3850 1300 3700 1300
+Connection ~ 3850 950 
+Wire Wire Line
+	3850 1300 3850 1650
+Wire Wire Line
+	3850 1650 3700 1650
+Connection ~ 3850 1300
+Wire Wire Line
+	3850 1650 3850 2000
+Wire Wire Line
+	3850 2000 3700 2000
+Connection ~ 3850 1650
+Wire Wire Line
+	3850 2000 3850 2350
+Wire Wire Line
+	3850 2350 3700 2350
+Connection ~ 3850 2000
+Wire Wire Line
+	2500 1300 2800 1300
+Wire Wire Line
+	2800 1650 2500 1650
+Wire Wire Line
+	2500 2000 2800 2000
+Wire Wire Line
+	2500 2350 2800 2350
+$Comp
+L Device:D D11
+U 1 1 5D217D83
+P 4650 1300
+F 0 "D11" H 4650 1516 50  0000 C CNN
+F 1 "D" H 4650 1425 50  0000 C CNN
+F 2 "" H 4650 1300 50  0001 C CNN
+F 3 "~" H 4650 1300 50  0001 C CNN
+	1    4650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D21
+U 1 1 5D217D89
+P 4650 1650
+F 0 "D21" H 4650 1866 50  0000 C CNN
+F 1 "D" H 4650 1775 50  0000 C CNN
+F 2 "" H 4650 1650 50  0001 C CNN
+F 3 "~" H 4650 1650 50  0001 C CNN
+	1    4650 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K11
+U 1 1 5D217D8F
+P 5100 1300
+F 0 "K11" H 5100 1533 60  0000 C CNN
+F 1 "KEYSW" H 5100 1200 60  0001 C CNN
+F 2 "" H 5100 1300 60  0000 C CNN
+F 3 "" H 5100 1300 60  0000 C CNN
+	1    5100 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K21
+U 1 1 5D217D95
+P 5100 1650
+F 0 "K21" H 5100 1883 60  0000 C CNN
+F 1 "KEYSW" H 5100 1550 60  0001 C CNN
+F 2 "" H 5100 1650 60  0000 C CNN
+F 3 "" H 5100 1650 60  0000 C CNN
+	1    5100 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D01
+U 1 1 5D217D9B
+P 4650 950
+F 0 "D01" H 4650 1166 50  0000 C CNN
+F 1 "D" H 4650 1075 50  0000 C CNN
+F 2 "" H 4650 950 50  0001 C CNN
+F 3 "~" H 4650 950 50  0001 C CNN
+	1    4650 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K01
+U 1 1 5D217DA1
+P 5100 950
+F 0 "K01" H 5100 1183 60  0000 C CNN
+F 1 "KEYSW" H 5100 850 60  0001 C CNN
+F 2 "" H 5100 950 60  0000 C CNN
+F 3 "" H 5100 950 60  0000 C CNN
+	1    5100 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K41
+U 1 1 5D217DA7
+P 5100 2350
+F 0 "K41" H 5100 2583 60  0000 C CNN
+F 1 "KEYSW" H 5100 2250 60  0001 C CNN
+F 2 "" H 5100 2350 60  0000 C CNN
+F 3 "" H 5100 2350 60  0000 C CNN
+	1    5100 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K31
+U 1 1 5D217DAD
+P 5100 2000
+F 0 "K31" H 5100 2233 60  0000 C CNN
+F 1 "KEYSW" H 5100 1900 60  0001 C CNN
+F 2 "" H 5100 2000 60  0000 C CNN
+F 3 "" H 5100 2000 60  0000 C CNN
+	1    5100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D41
+U 1 1 5D217DB3
+P 4650 2350
+F 0 "D41" H 4650 2566 50  0000 C CNN
+F 1 "D" H 4650 2475 50  0000 C CNN
+F 2 "" H 4650 2350 50  0001 C CNN
+F 3 "~" H 4650 2350 50  0001 C CNN
+	1    4650 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D31
+U 1 1 5D217DB9
+P 4650 2000
+F 0 "D31" H 4650 2216 50  0000 C CNN
+F 1 "D" H 4650 2125 50  0000 C CNN
+F 2 "" H 4650 2000 50  0001 C CNN
+F 3 "~" H 4650 2000 50  0001 C CNN
+	1    4650 2000
+	1    0    0    -1  
+$EndComp
+Text Label 4200 950  0    50   ~ 0
+row0
+Wire Wire Line
+	4200 950  4500 950 
+Text Label 4200 1300 0    50   ~ 0
+row1
+Text Label 4200 1650 0    50   ~ 0
+row2
+Text Label 4200 2000 0    50   ~ 0
+row3
+Text Label 4200 2350 0    50   ~ 0
+row4
+Text Label 5550 650  1    50   ~ 0
+col1
+Wire Wire Line
+	5550 650  5550 950 
+Wire Wire Line
+	5550 950  5400 950 
+Wire Wire Line
+	5550 950  5550 1300
+Wire Wire Line
+	5550 1300 5400 1300
+Connection ~ 5550 950 
+Wire Wire Line
+	5550 1300 5550 1650
+Wire Wire Line
+	5550 1650 5400 1650
+Connection ~ 5550 1300
+Wire Wire Line
+	5550 1650 5550 2000
+Wire Wire Line
+	5550 2000 5400 2000
+Connection ~ 5550 1650
+Wire Wire Line
+	5550 2000 5550 2350
+Wire Wire Line
+	5550 2350 5400 2350
+Connection ~ 5550 2000
+Wire Wire Line
+	4200 1300 4500 1300
+Wire Wire Line
+	4500 1650 4200 1650
+Wire Wire Line
+	4200 2000 4500 2000
+Wire Wire Line
+	4200 2350 4500 2350
+$Comp
+L Device:D D12
+U 1 1 5D224D9F
+P 6350 1300
+F 0 "D12" H 6350 1516 50  0000 C CNN
+F 1 "D" H 6350 1425 50  0000 C CNN
+F 2 "" H 6350 1300 50  0001 C CNN
+F 3 "~" H 6350 1300 50  0001 C CNN
+	1    6350 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D22
+U 1 1 5D224DA5
+P 6350 1650
+F 0 "D22" H 6350 1866 50  0000 C CNN
+F 1 "D" H 6350 1775 50  0000 C CNN
+F 2 "" H 6350 1650 50  0001 C CNN
+F 3 "~" H 6350 1650 50  0001 C CNN
+	1    6350 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K12
+U 1 1 5D224DAB
+P 6800 1300
+F 0 "K12" H 6800 1533 60  0000 C CNN
+F 1 "KEYSW" H 6800 1200 60  0001 C CNN
+F 2 "" H 6800 1300 60  0000 C CNN
+F 3 "" H 6800 1300 60  0000 C CNN
+	1    6800 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K22
+U 1 1 5D224DB1
+P 6800 1650
+F 0 "K22" H 6800 1883 60  0000 C CNN
+F 1 "KEYSW" H 6800 1550 60  0001 C CNN
+F 2 "" H 6800 1650 60  0000 C CNN
+F 3 "" H 6800 1650 60  0000 C CNN
+	1    6800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D02
+U 1 1 5D224DB7
+P 6350 950
+F 0 "D02" H 6350 1166 50  0000 C CNN
+F 1 "D" H 6350 1075 50  0000 C CNN
+F 2 "" H 6350 950 50  0001 C CNN
+F 3 "~" H 6350 950 50  0001 C CNN
+	1    6350 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K02
+U 1 1 5D224DBD
+P 6800 950
+F 0 "K02" H 6800 1183 60  0000 C CNN
+F 1 "KEYSW" H 6800 850 60  0001 C CNN
+F 2 "" H 6800 950 60  0000 C CNN
+F 3 "" H 6800 950 60  0000 C CNN
+	1    6800 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K42
+U 1 1 5D224DC3
+P 6800 2350
+F 0 "K42" H 6800 2583 60  0000 C CNN
+F 1 "KEYSW" H 6800 2250 60  0001 C CNN
+F 2 "" H 6800 2350 60  0000 C CNN
+F 3 "" H 6800 2350 60  0000 C CNN
+	1    6800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K32
+U 1 1 5D224DC9
+P 6800 2000
+F 0 "K32" H 6800 2233 60  0000 C CNN
+F 1 "KEYSW" H 6800 1900 60  0001 C CNN
+F 2 "" H 6800 2000 60  0000 C CNN
+F 3 "" H 6800 2000 60  0000 C CNN
+	1    6800 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D42
+U 1 1 5D224DCF
+P 6350 2350
+F 0 "D42" H 6350 2566 50  0000 C CNN
+F 1 "D" H 6350 2475 50  0000 C CNN
+F 2 "" H 6350 2350 50  0001 C CNN
+F 3 "~" H 6350 2350 50  0001 C CNN
+	1    6350 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D32
+U 1 1 5D224DD5
+P 6350 2000
+F 0 "D32" H 6350 2216 50  0000 C CNN
+F 1 "D" H 6350 2125 50  0000 C CNN
+F 2 "" H 6350 2000 50  0001 C CNN
+F 3 "~" H 6350 2000 50  0001 C CNN
+	1    6350 2000
+	1    0    0    -1  
+$EndComp
+Text Label 5900 950  0    50   ~ 0
+row0
+Wire Wire Line
+	5900 950  6200 950 
+Text Label 5900 1300 0    50   ~ 0
+row1
+Text Label 5900 1650 0    50   ~ 0
+row2
+Text Label 5900 2000 0    50   ~ 0
+row3
+Text Label 5900 2350 0    50   ~ 0
+row4
+Text Label 7250 650  1    50   ~ 0
+col2
+Wire Wire Line
+	7250 650  7250 950 
+Wire Wire Line
+	7250 950  7100 950 
+Wire Wire Line
+	7250 950  7250 1300
+Wire Wire Line
+	7250 1300 7100 1300
+Connection ~ 7250 950 
+Wire Wire Line
+	7250 1300 7250 1650
+Wire Wire Line
+	7250 1650 7100 1650
+Connection ~ 7250 1300
+Wire Wire Line
+	7250 1650 7250 2000
+Wire Wire Line
+	7250 2000 7100 2000
+Connection ~ 7250 1650
+Wire Wire Line
+	7250 2000 7250 2350
+Wire Wire Line
+	7250 2350 7100 2350
+Connection ~ 7250 2000
+Wire Wire Line
+	5900 1300 6200 1300
+Wire Wire Line
+	6200 1650 5900 1650
+Wire Wire Line
+	5900 2000 6200 2000
+Wire Wire Line
+	5900 2350 6200 2350
+$Comp
+L Device:D D13
+U 1 1 5D22AA94
+P 8050 1300
+F 0 "D13" H 8050 1516 50  0000 C CNN
+F 1 "D" H 8050 1425 50  0000 C CNN
+F 2 "" H 8050 1300 50  0001 C CNN
+F 3 "~" H 8050 1300 50  0001 C CNN
+	1    8050 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D23
+U 1 1 5D22AA9A
+P 8050 1650
+F 0 "D23" H 8050 1866 50  0000 C CNN
+F 1 "D" H 8050 1775 50  0000 C CNN
+F 2 "" H 8050 1650 50  0001 C CNN
+F 3 "~" H 8050 1650 50  0001 C CNN
+	1    8050 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K13
+U 1 1 5D22AAA0
+P 8500 1300
+F 0 "K13" H 8500 1533 60  0000 C CNN
+F 1 "KEYSW" H 8500 1200 60  0001 C CNN
+F 2 "" H 8500 1300 60  0000 C CNN
+F 3 "" H 8500 1300 60  0000 C CNN
+	1    8500 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K23
+U 1 1 5D22AAA6
+P 8500 1650
+F 0 "K23" H 8500 1883 60  0000 C CNN
+F 1 "KEYSW" H 8500 1550 60  0001 C CNN
+F 2 "" H 8500 1650 60  0000 C CNN
+F 3 "" H 8500 1650 60  0000 C CNN
+	1    8500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D03
+U 1 1 5D22AAAC
+P 8050 950
+F 0 "D03" H 8050 1166 50  0000 C CNN
+F 1 "D" H 8050 1075 50  0000 C CNN
+F 2 "" H 8050 950 50  0001 C CNN
+F 3 "~" H 8050 950 50  0001 C CNN
+	1    8050 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K03
+U 1 1 5D22AAB2
+P 8500 950
+F 0 "K03" H 8500 1183 60  0000 C CNN
+F 1 "KEYSW" H 8500 850 60  0001 C CNN
+F 2 "" H 8500 950 60  0000 C CNN
+F 3 "" H 8500 950 60  0000 C CNN
+	1    8500 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K43
+U 1 1 5D22AAB8
+P 8500 2350
+F 0 "K43" H 8500 2583 60  0000 C CNN
+F 1 "KEYSW" H 8500 2250 60  0001 C CNN
+F 2 "" H 8500 2350 60  0000 C CNN
+F 3 "" H 8500 2350 60  0000 C CNN
+	1    8500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K33
+U 1 1 5D22AABE
+P 8500 2000
+F 0 "K33" H 8500 2233 60  0000 C CNN
+F 1 "KEYSW" H 8500 1900 60  0001 C CNN
+F 2 "" H 8500 2000 60  0000 C CNN
+F 3 "" H 8500 2000 60  0000 C CNN
+	1    8500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D43
+U 1 1 5D22AAC4
+P 8050 2350
+F 0 "D43" H 8050 2566 50  0000 C CNN
+F 1 "D" H 8050 2475 50  0000 C CNN
+F 2 "" H 8050 2350 50  0001 C CNN
+F 3 "~" H 8050 2350 50  0001 C CNN
+	1    8050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D33
+U 1 1 5D22AACA
+P 8050 2000
+F 0 "D33" H 8050 2216 50  0000 C CNN
+F 1 "D" H 8050 2125 50  0000 C CNN
+F 2 "" H 8050 2000 50  0001 C CNN
+F 3 "~" H 8050 2000 50  0001 C CNN
+	1    8050 2000
+	1    0    0    -1  
+$EndComp
+Text Label 7600 950  0    50   ~ 0
+row0
+Wire Wire Line
+	7600 950  7900 950 
+Text Label 7600 1300 0    50   ~ 0
+row1
+Text Label 7600 1650 0    50   ~ 0
+row2
+Text Label 7600 2000 0    50   ~ 0
+row3
+Text Label 7600 2350 0    50   ~ 0
+row4
+Text Label 8950 650  1    50   ~ 0
+col3
+Wire Wire Line
+	8950 650  8950 950 
+Wire Wire Line
+	8950 950  8800 950 
+Wire Wire Line
+	8950 950  8950 1300
+Wire Wire Line
+	8950 1300 8800 1300
+Connection ~ 8950 950 
+Wire Wire Line
+	8950 1300 8950 1650
+Wire Wire Line
+	8950 1650 8800 1650
+Connection ~ 8950 1300
+Wire Wire Line
+	8950 1650 8950 2000
+Wire Wire Line
+	8950 2000 8800 2000
+Connection ~ 8950 1650
+Wire Wire Line
+	8950 2000 8950 2350
+Wire Wire Line
+	8950 2350 8800 2350
+Connection ~ 8950 2000
+Wire Wire Line
+	7600 1300 7900 1300
+Wire Wire Line
+	7900 1650 7600 1650
+Wire Wire Line
+	7600 2000 7900 2000
+Wire Wire Line
+	7600 2350 7900 2350
+$Comp
+L Device:D D14
+U 1 1 5D233BA0
+P 9750 1300
+F 0 "D14" H 9750 1516 50  0000 C CNN
+F 1 "D" H 9750 1425 50  0000 C CNN
+F 2 "" H 9750 1300 50  0001 C CNN
+F 3 "~" H 9750 1300 50  0001 C CNN
+	1    9750 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D24
+U 1 1 5D233BA6
+P 9750 1650
+F 0 "D24" H 9750 1866 50  0000 C CNN
+F 1 "D" H 9750 1775 50  0000 C CNN
+F 2 "" H 9750 1650 50  0001 C CNN
+F 3 "~" H 9750 1650 50  0001 C CNN
+	1    9750 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K14
+U 1 1 5D233BAC
+P 10200 1300
+F 0 "K14" H 10200 1533 60  0000 C CNN
+F 1 "KEYSW" H 10200 1200 60  0001 C CNN
+F 2 "" H 10200 1300 60  0000 C CNN
+F 3 "" H 10200 1300 60  0000 C CNN
+	1    10200 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K24
+U 1 1 5D233BB2
+P 10200 1650
+F 0 "K24" H 10200 1883 60  0000 C CNN
+F 1 "KEYSW" H 10200 1550 60  0001 C CNN
+F 2 "" H 10200 1650 60  0000 C CNN
+F 3 "" H 10200 1650 60  0000 C CNN
+	1    10200 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D04
+U 1 1 5D233BB8
+P 9750 950
+F 0 "D04" H 9750 1166 50  0000 C CNN
+F 1 "D" H 9750 1075 50  0000 C CNN
+F 2 "" H 9750 950 50  0001 C CNN
+F 3 "~" H 9750 950 50  0001 C CNN
+	1    9750 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K04
+U 1 1 5D233BBE
+P 10200 950
+F 0 "K04" H 10200 1183 60  0000 C CNN
+F 1 "KEYSW" H 10200 850 60  0001 C CNN
+F 2 "" H 10200 950 60  0000 C CNN
+F 3 "" H 10200 950 60  0000 C CNN
+	1    10200 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K44
+U 1 1 5D233BC4
+P 10200 2350
+F 0 "K44" H 10200 2583 60  0000 C CNN
+F 1 "KEYSW" H 10200 2250 60  0001 C CNN
+F 2 "" H 10200 2350 60  0000 C CNN
+F 3 "" H 10200 2350 60  0000 C CNN
+	1    10200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L HASU_keyboard_parts:KEYSW K34
+U 1 1 5D233BCA
+P 10200 2000
+F 0 "K34" H 10200 2233 60  0000 C CNN
+F 1 "KEYSW" H 10200 1900 60  0001 C CNN
+F 2 "" H 10200 2000 60  0000 C CNN
+F 3 "" H 10200 2000 60  0000 C CNN
+	1    10200 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D44
+U 1 1 5D233BD0
+P 9750 2350
+F 0 "D44" H 9750 2566 50  0000 C CNN
+F 1 "D" H 9750 2475 50  0000 C CNN
+F 2 "" H 9750 2350 50  0001 C CNN
+F 3 "~" H 9750 2350 50  0001 C CNN
+	1    9750 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D34
+U 1 1 5D233BD6
+P 9750 2000
+F 0 "D34" H 9750 2216 50  0000 C CNN
+F 1 "D" H 9750 2125 50  0000 C CNN
+F 2 "" H 9750 2000 50  0001 C CNN
+F 3 "~" H 9750 2000 50  0001 C CNN
+	1    9750 2000
+	1    0    0    -1  
+$EndComp
+Text Label 9300 950  0    50   ~ 0
+row0
+Wire Wire Line
+	9300 950  9600 950 
+Text Label 9300 1300 0    50   ~ 0
+row1
+Text Label 9300 1650 0    50   ~ 0
+row2
+Text Label 9300 2000 0    50   ~ 0
+row3
+Text Label 9300 2350 0    50   ~ 0
+row4
+Text Label 10650 650  1    50   ~ 0
+col4
+Wire Wire Line
+	10650 650  10650 950 
+Wire Wire Line
+	10650 950  10500 950 
+Wire Wire Line
+	10650 950  10650 1300
+Wire Wire Line
+	10650 1300 10500 1300
+Connection ~ 10650 950 
+Wire Wire Line
+	10650 1300 10650 1650
+Wire Wire Line
+	10650 1650 10500 1650
+Connection ~ 10650 1300
+Wire Wire Line
+	10650 1650 10650 2000
+Wire Wire Line
+	10650 2000 10500 2000
+Connection ~ 10650 1650
+Wire Wire Line
+	10650 2000 10650 2350
+Wire Wire Line
+	10650 2350 10500 2350
+Connection ~ 10650 2000
+Wire Wire Line
+	9300 1300 9600 1300
+Wire Wire Line
+	9600 1650 9300 1650
+Wire Wire Line
+	9300 2000 9600 2000
+Wire Wire Line
+	9300 2350 9600 2350
+$Comp
+L adafruit_feathers:Feather_nRF52 U?
+U 1 1 5D348095
+P 2800 4000
+F 0 "U?" H 2800 5055 50  0000 C CNN
+F 1 "Feather_nRF52" H 2800 4964 50  0000 C CNN
+F 2 "" H 2700 4000 50  0001 C CNN
+F 3 "" H 2700 4000 50  0001 C CNN
+	1    2800 4000
+	1    0    0    -1  
+$EndComp
+Text Label 1500 3600 2    50   ~ 0
+row0
+Wire Wire Line
+	1500 3600 1800 3600
+Text Label 1500 3700 2    50   ~ 0
+row1
+Text Label 1500 3800 2    50   ~ 0
+row2
+Text Label 1500 3900 2    50   ~ 0
+row3
+Text Label 1500 4100 2    50   ~ 0
+row4
+Wire Wire Line
+	1500 3700 1800 3700
+Wire Wire Line
+	1500 3800 1800 3800
+Wire Wire Line
+	1500 3900 1800 3900
+Wire Wire Line
+	1500 4100 1800 4100
+Text Label 4000 3900 0    50   ~ 0
+col0
+Text Label 4000 4100 0    50   ~ 0
+col1
+Text Label 4000 4200 0    50   ~ 0
+col2
+Text Label 4000 4300 0    50   ~ 0
+col3
+Text Label 4000 4500 0    50   ~ 0
+col4
+Wire Wire Line
+	3800 3900 4000 3900
+Wire Wire Line
+	4000 4100 3800 4100
+Wire Wire Line
+	3800 4200 4000 4200
+Wire Wire Line
+	3800 4300 4000 4300
+Wire Wire Line
+	3800 4500 4000 4500
+$EndSCHEMATC
